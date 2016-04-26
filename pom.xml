@@ -206,12 +206,14 @@
 			<artifactId>mail</artifactId>
 			<version>1.4.7</version>
 		</dependency>
+		<!--
 		<dependency>
 		    <groupId>jaf</groupId>
 		    <artifactId>activation</artifactId>
 		    <version>1.0.2</version>
 		    <scope>provided</scope>    
 		</dependency>
+		 -->
 		
 		<!-- velocity -->
 		<dependency>
