@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+  
+    <definition name="LayoutTemplate" template="/WEB-INF/template/default/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/template/default/header.jsp" />
+        <put-attribute name="headingBar" value="/WEB-INF/template/default/headingBar.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/default/menu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/template/default/footer.jsp" />
+    </definition>
+    
+    <definition name="DashboardMangerTemplate" extends="LayoutTemplate">
+<!--         <put-attribute name="header" value="/WEB-INF/template/DashboardManager/header.jsp" /> -->
+<!--         <put-attribute name="headingBar" value="/WEB-INF/template/DashboardManager/headingBar.jsp" /> -->
+        <put-attribute name="menu" value="/WEB-INF/template/DashboardManager/menu.jsp" />
+<!--         <put-attribute name="footer" value="/WEB-INF/template/DashboardManager/footer.jsp" /> -->
+    </definition>
+    
+    <definition name="AdminTemplate" extends="LayoutTemplate">
+    	<put-attribute name="header" value="/WEB-INF/template/Admin/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/Admin/menu.jsp" />
+    </definition>
+  
+  	<definition name="ProjectChiefTemplate" extends="DashboardMangerTemplate">
+<!--         <put-attribute name="menu" value="/WEB-INF/template/ProjectChief/menu.jsp" /> -->
+    </definition>
+    
+    <definition name="TeamMemberTemplate" extends="LayoutTemplate">
+    <put-attribute name="header" value="/WEB-INF/template/TeamMember/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/template/TeamMember/menu.jsp" />
+    </definition>
+    
+    <definition name="ClientTemplate" extends="LayoutTemplate">
+        <put-attribute name="menu" value="/WEB-INF/template/Client/menu.jsp" />
+    </definition>
+    
+</tiles-definitions>
